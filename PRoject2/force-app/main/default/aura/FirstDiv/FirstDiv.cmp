@@ -1,3 +1,7 @@
 <aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
-	Hello World
+	<div style="border:3px solid black; padding:30px; font-size:16px; text-align: left;">
+    This is a community built on your users working together to analyse securities. Once logged in users can view stock information and make a prediction based on how they feel about how specific sock will preform over a certain period of time. Users can then view visual data consisting of other users predictions to understand how everyone else perceives the stock. 
+        <br/>
+    So create an account and get started!!
+</div>
 </aura:component>

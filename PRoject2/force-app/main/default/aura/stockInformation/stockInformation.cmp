@@ -6,8 +6,8 @@
     
     <aura:attribute name="objClassController" type="selectStocks[]"/>
     <aura:attribute name="myAttribute" type="String"/>
-    <aura:attribute name="myMessage" type="String" default="testing testing 123"/>
-    <aura:attribute name="buttonLabel" type="String" default="testing testing 123"/>
+    <aura:attribute name="myMessage" type="String" />
+    <aura:attribute name="buttonLabel" type="String" />
     
     
     <lightning:button aura:id="button1" label="Change Value"  onclick="{!c.fireAnEvent}"/>
