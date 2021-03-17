@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticker_Symbol_del__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Stock&apos;s Tiker Symbol</description>
+    <externalId>false</externalId>
+    <label>Tiker Symbol</label>
+    <referenceTo>Community_Prediction__c</referenceTo>
+    <relationshipLabel>User Predictions</relationshipLabel>
+    <relationshipName>User_Predictions_del</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

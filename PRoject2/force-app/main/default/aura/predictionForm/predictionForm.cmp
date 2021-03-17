@@ -1,0 +1,48 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+     <aura:handler event="c:setstock" action="{!c.handlefiredEvent}"/>
+    <!--<lightning:card title="Make a prediction" /> -->
+    
+    <aura:attribute name="stock" type="String" default="Stock"/>
+    <aura:attribute name="CurrentUser" type="String" default="Jjj"/>
+    
+    <!-- PAGE HEADER -->
+    <lightning:layout class="slds-page-header slds-page-header_object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="My Prediction"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h1 class="slds-text-heading_label">Prediction</h1>
+                <h2 class="slds-text-heading_medium">My Price Prediction for {!v.stock}</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+ 
+    
+    
+    
+    
+    
+    
+    
+    <lightning:recordEditForm aura:id="recordEditForm"
+                           objectApiName="User_Prediction__c">
+        <lightning:messages />
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <!-- More lightning:inputField components here -->
+                    <lightning:inputField fieldName="Name" value="{!v.CurrentUser}"/>
+                    <lightning:inputField fieldName="Ticker_Symbol_del__c" value="{!v.stock}" />
+                    <lightning:inputField fieldName="Current_Price__c" />
+                    <lightning:inputField fieldName="Price_Target__c" />
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <!-- More lightning:inputField components here -->
+                    <lightning:inputField fieldName="Short__c" />
+                    <lightning:inputField fieldName="Price_Target_Date__c" />
+                    <lightning:inputField fieldName="Confidence_Rating__c" />
+                </div>
+            </div>        
+        <lightning:button class="slds-m-top_small" type="submit" label="Submit" />
+    </lightning:recordEditForm>
+</aura:component>

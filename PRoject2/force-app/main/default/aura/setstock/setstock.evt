@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="stockName" type="String" default="Yes Yes Yes"/>
+    
+</aura:event>

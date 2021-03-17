@@ -1,0 +1,56 @@
+<aura:component controller="selectStocks" implements="flexipage:availableForRecordHome,force:hasRecordId,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+
+    
+    <aura:registerEvent name="setstock" type="c:setstock"/>
+    <aura:handler event="c:setstock" action="{!c.handlefiredEvent}"/>
+    
+    <aura:attribute name="objClassController" type="selectStocks[]"/>
+    <aura:attribute name="myAttribute" type="String"/>
+    <aura:attribute name="myMessage" type="String" default="testing testing 123"/>
+    <aura:attribute name="buttonLabel" type="String" default="testing testing 123"/>
+    
+    
+    <lightning:button aura:id="button1" label="Change Value"  onclick="{!c.fireAnEvent}"/>
+    
+    
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small"/>
+            Search For A Stock of Intrest
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:input aura:id="myAtt" fieldName="Stock" value="{!v.myMessage}" type="search" label="Search"  />
+            <lightning:button label="Display Information" onclick="{!c.displayStock}" />
+            
+           <aura:iteration items="{!v.objClassController}" var="Artical"> 
+                
+            <!--access apex class Property with oClassController attribute-->
+                <div style="border:3px solid black; padding:30px; background-color:#5397eb; font-size:16px; text-align: left;">
+                    Ticker symbol {!Artical.tickers}
+                    <h1>{!Artical.title}</h1> by {!Artical.author_name}. 
+                    <p>{!Artical.summary}</p> 
+                    <br/>
+                    <br/>
+                    {!Artical.url}
+                    
+                    <br/>
+                    <br/>
+                </div>
+            </aura:iteration> 
+        </aura:set>
+        Search Stock 
+    </lightning:card>
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+
+</aura:component>

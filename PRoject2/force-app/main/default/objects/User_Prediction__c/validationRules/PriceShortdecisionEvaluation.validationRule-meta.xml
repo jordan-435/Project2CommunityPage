@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriceShortdecisionEvaluation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(Short__c ,Current_Price__c &lt; Price_Target__c ),  AND(NOT(Short__c) ,Current_Price__c &gt; Price_Target__c ))</errorConditionFormula>
+    <errorDisplayField>Price_Target__c</errorDisplayField>
+    <errorMessage>Price target does not match Long/Short decision feild.</errorMessage>
+</ValidationRule>

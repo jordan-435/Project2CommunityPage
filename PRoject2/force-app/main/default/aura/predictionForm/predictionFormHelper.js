@@ -1,0 +1,5 @@
+({
+    createPrediction: function(component, expense) {
+
+    }
+})
