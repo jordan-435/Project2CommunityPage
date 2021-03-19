@@ -8,7 +8,10 @@ With this website user can add a prediction to what the think how a given stock 
   * Lightning components
   * Developer console
   * Reports and dashboards
-
+# To-Do 
+  * Improve Dashboard
+  * Add REAST API charts
+  * Impliment Chatter
 # Features
   * REST API
   * AURA Components provides interactive client side functionality 
