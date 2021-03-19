@@ -14,5 +14,10 @@ Features
   * AURA Components provides interactive client side functionality 
   * Responsive design
 
+# Getting Started
+  * Clone the project in IDE of choice and the following command line: git repo clone cloughtower/project-1-benlearn
+  * Connect to Salesforce Org
+  * Deploy code to Salesforce Org
 
-Link to website: https://artistcommunity-developer-edition.na156.force.com
+# Usage
+This project is end-user oriented, so once a customer logs in they will be able to see relevant information.
