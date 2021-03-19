@@ -2,14 +2,14 @@
 
 With this website user can add a prediction to what the think how a given stock will preform. User can also view how the community feels about the stock will preform and take into account this information. With dashboard we can view our community perdictions in different way in order to grasp a solid understanding pf how the community feels and wich stock they are intrested in.
 
-Technologies used
+# Technologies used
   * VScode
   * Experience builder
   * Lightning components
   * Developer console
   * Reports and dashboards
 
-Features
+# Features
   * REST API
   * AURA Components provides interactive client side functionality 
   * Responsive design
@@ -21,3 +21,6 @@ Features
 
 # Usage
 This project is end-user oriented, so once a customer logs in they will be able to see relevant information.
+
+# License
+This project uses the following license: [Acceptable Use and External-Facing Services Policy](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/policies/ExternalFacing_Services_Policy.pdf).
