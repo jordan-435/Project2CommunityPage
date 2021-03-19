@@ -1,4 +1,7 @@
-# Project2CommunityPage
+# Stock Community Page
+
+With this website user can add a prediction to what the think how a given stock will preform. User can also view how the community feels about the stock will preform and take into account this information. With dashboard we can view our community perdictions in different way in order to grasp a solid understanding pf how the community feels and wich stock they are intrested in.
+
 Technologies used
   * VScode
   * Experience builder
