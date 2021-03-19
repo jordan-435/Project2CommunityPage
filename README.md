@@ -15,7 +15,7 @@ With this website user can add a prediction to what the think how a given stock 
   * Responsive design
 
 # Getting Started
-  * Clone the project in IDE of choice and the following command line: git repo clone cloughtower/project-1-benlearn
+  * Clone the project in IDE of choice and the following command line: git repo clone https://github.com/jordan-435/Project2CommunityPage.git
   * Connect to Salesforce Org
   * Deploy code to Salesforce Org
 
